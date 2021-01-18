@@ -48,4 +48,9 @@ Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension
         <td> <img src="Resources/lot2_PSI_t.png" alt="Lot 2 PSI t test" /></td>
         <td> <img src="Resources/lot3_PSI_t.png" alt="Lot 3 PSI t test" /></td>
     </tr>
+    <tr>
+        <td> Given that lot 1 had mean of 1500, it makes sense that the p-value here is 1. In other words, the null hypothesis that the sample mean is equal to 1500 is not rejected. </td>
+        <td> Similarly, the sample mean is very close to 1500 (1500.2), it is no surprise the p-value is 0.61. Again, no significant statistical difference in mean to 1500. </td>
+        <td> While the sample mean is 1496.14 may not seem very far off 1500, recall that the variance of lot 3 is much larger than the other lots. P-value is 0.042, thus we reject the null and conclude the mean is significantly different from the benchmark of 1500 PSI.</td>
+    </tr>
 </table>
