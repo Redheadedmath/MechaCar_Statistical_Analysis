@@ -39,9 +39,9 @@ Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension
 
 <table style="width=100px">
     <tr>
-        <th style="width=50px"> Lot 1 Test</th>
-        <th stlye="width=50px"> Lot 2 Test</th>
-        <th style="width=50px"> Lot 3 Test</th>
+        <th style="width=33.3x"> Lot 1 Test</th>
+        <th stlye="width=33.3x"> Lot 2 Test</th>
+        <th style="width=33.4px"> Lot 3 Test</th>
     </tr>
     <tr>
         <td> <img src="Resources/lot1_PSI_t.png" alt="Lot 1 PSI t test" /></td>
