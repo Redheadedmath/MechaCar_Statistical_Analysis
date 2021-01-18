@@ -39,14 +39,14 @@ Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension
 
 <table style="width=100px">
     <tr>
-        <th style="width=33.3px"> Lot 1 Test</th>
-        <th stlye="width=33.3px"> Lot 2 Test</th>
-        <th style="width=33.4px"> Lot 3 Test</th>
+        <th> Lot 1 Test</th>
+        <th> Lot 2 Test</th>
+        <th> Lot 3 Test</th>
     </tr>
     <tr>
-        <td> <img src="Resources/lot1_PSI_t.png" alt="Lot 1 PSI t test" /></td>
-        <td> <img src="Resources/lot2_PSI_t.png" alt="Lot 2 PSI t test" /></td>
-        <td> <img src="Resources/lot3_PSI_t.png" alt="Lot 3 PSI t test" /></td>
+        <td> <img src="Resources/lot1_PSI_t.png" alt="Lot 1 PSI t test" style="width=33.3px"/></td>
+        <td> <img src="Resources/lot2_PSI_t.png" alt="Lot 2 PSI t test" stlye="width=33.3px"/></td>
+        <td> <img src="Resources/lot3_PSI_t.png" alt="Lot 3 PSI t test" style="width=33.4px"/></td>
     </tr>
     <tr>
         <td> Given that lot 1 had mean of 1500, it makes sense that the p-value here is 1. In other words, the null hypothesis that the sample mean is equal to 1500 is not rejected. </td>
