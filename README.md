@@ -9,7 +9,7 @@ There are a number of known influencing variables on a given vehicle's MPG ratin
 
 Below are the results and model of the multiple regression. <br /> 
 <p>
-    <img src="Resources/MLR_mpg.png" alt="Mult Lin Reg" style="width: 100px;"/>
+    <img src="Resources/MLR_mpg.png" alt="Mult Lin Reg" style="width: 50px;"/>
 </p>
 
 ### Significant (Non-random) Influencing Variables
@@ -31,5 +31,5 @@ Quality control requires that a given lot of suspension coils maintains a varian
 According to analysis of these lots, while lots 1 and 2 adhere to this condition, lot 3 does not. 
 
 <p>
-    <img src="Resources/lot_summary.png" alt="Summary Statistics for Suspension Coils PSI" style="width: 100px" />
+    <img src="Resources/lot_summary.png" alt="Summary Statistics for Suspension Coils PSI" style="width: 50px" />
 </p>
