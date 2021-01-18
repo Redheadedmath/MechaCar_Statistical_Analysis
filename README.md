@@ -37,16 +37,16 @@ However, further analyzing the separate lots within the total sample yield diffe
 ## T-Tests on Suspension Coils
 Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension coils. Given that lot 3 coils do not meet the constraints for variance, follow up testing was conducted to confirm which lots met the 1500 PSI mean. The table below depicts the results of the t tests for each lot. 
 
-<table style="width=100px">
+<table style="width: 100px">
     <tr>
         <th> Lot 1 Test</th>
         <th> Lot 2 Test</th>
         <th> Lot 3 Test</th>
     </tr>
     <tr>
-        <td> <img src="Resources/lot1_PSI_t.png" alt="Lot 1 PSI t test" style="width=33.3px"/></td>
-        <td> <img src="Resources/lot2_PSI_t.png" alt="Lot 2 PSI t test" stlye="width=33.3px"/></td>
-        <td> <img src="Resources/lot3_PSI_t.png" alt="Lot 3 PSI t test" style="width=33.4px"/></td>
+        <td> <img src="Resources/lot1_PSI_t.png" alt="Lot 1 PSI t test" style="width: 33.3px"/></td>
+        <td> <img src="Resources/lot2_PSI_t.png" alt="Lot 2 PSI t test" stlye="width: 33.3px"/></td>
+        <td> <img src="Resources/lot3_PSI_t.png" alt="Lot 3 PSI t test" style="width: 33.4px"/></td>
     </tr>
     <tr>
         <td> Given that lot 1 had mean of 1500, it makes sense that the p-value here is 1. In other words, the null hypothesis that the sample mean is equal to 1500 is not rejected. </td>
@@ -54,3 +54,29 @@ Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension
         <td> While the sample mean is 1496.14 may not seem very far off 1500, recall that the variance of lot 3 is much larger than the other lots. P-value is 0.042, thus we reject the null and conclude the mean is significantly different from the benchmark of 1500 PSI.</td>
     </tr>
 </table>
+
+To further clarify or confirm the differences between the lots of suspension coils, below shows the results of 1-way ANOVA and the results of the post-hoc Tukey test for comparisons.<br /> 
+<table style="width:100px">
+    <tr>
+        <th> ANOVA Results </th>
+        <th> Tukey's Test </th>
+    </tr>
+    <tr>
+        <td> <img src="Resources/anova_by_lot.png" alt="ANOVA Results" style="width: 50px" /> </td>
+        <td> <img src="Resources/Tukey.png" alt="Tukey Comparisons Results" style="width: 50px" /></td>
+    </tr>
+    <tr>
+        <td> The p-value of 0.014 indicates at any typical level of significance greater than 0.01 that there is a statistically significant difference in means of the 3 lots. </td>
+        <td> The Tukey's comparisons test confirms that the difference therein resides in lot 3. With the previous analyses, this is not surprising. </td>
+    </tr>
+</table>
+
+## Study Design: MechaCar vs Competition
+According to "10 Steps to Finding the Right Car for You" from Edmunds.com, some of the most pressing issues when considering a new vehicle come down to the following: feul economy, cost, maintenance costs, safety ratings, and where you will be driving your new vehicle. MechaCars business is of a scope similar to leading competitors such as Ford and GM (GM having sold nearly 500k cars in 2020 second quarter--a decline due in part to the pandemic). In order to compare MechaCar vehicles to those of it's top competitors, I recommend examining the testing records for both MechaCar's new models and the top performing models from Ford, GM, Dodge, Nissan, and Toyota. Using a randomized block design, the vehicles would be put into factor groups based on make and class with 6 treatment levels of mileage and location tested (i.e. tested over combinations of short, moderate, or long durations, and in city or out of city). <br /> <br />
+From there, the following metrics can be gathered and analyzed in order to determine MechaCar's status relative to top competitors. 
+- *Feul Economy:* mileage (MPG) [The treatment groups will clarify HWY vs City]
+- *Cost:* Expected base market value + a decided upon number of ammenities (are vehicles assumed to all come with the same base level products, i.e. power windows, heated seats, etc.)
+- *Expected Maintenance Costs:* Can be provided through analyzing historical costs of a given make's similar/previous models
+- *Safety Ratings:* use accepted metric, such as JD Power rating
+
+Several levels of analysis could then be performed depending on interest and value of the analysis. Within treatment levels, and assuming normality, ANOVA tests and Tukey's comparisons can determine differences across factor levels and provide an indication as to the leader in the above metrics per relative group. For non parametric data, the Kruskal-Wallis test can provide similar insights into a starting place for comparing differences within treatment levels. 
