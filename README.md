@@ -28,8 +28,24 @@ Quality control requires that a given lot of suspension coils maintains a varian
     <img src="Resources/total_summary.png" alt="Overall Summary Statistics" style="width: 50px" />
 </p>
 
-According to analysis of these lots, while lots 1 and 2 adhere to this condition, lot 3 does not. 
+However, further analyzing the separate lots within the total sample yield different results. According to analysis of these lots, while lots 1 and 2 adhere to this condition, lot 3 does not. 
 
 <p>
     <img src="Resources/lot_summary.png" alt="Summary Statistics for Suspension Coils PSI" style="width: 50px" />
 </p>
+
+## T-Tests on Suspension Coils
+Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension coils. Given that lot 3 coils do not meet the constraints for variance, follow up testing was conducted to confirm which lots met the 1500 PSI mean. The table below depicts the results of the t tests for each lot. 
+
+<table style="width=100px">
+    <tr>
+        <th> Lot 1 Test</th>
+        <th> Lot 2 Test</th>
+        <th> Lot 3 Test</th>
+    </tr>
+    <tr>
+        <td> <img src="Resources/lot1_PSI.png" alt="Lot 1 PSI t test" /></td>
+        <td> <img src="Resources/lot2_PSI.png" alt="Lot 2 PSI t test" /></td>
+        <td> <img src="Resources/lot3_PSI.png" alt="Lot 3 PSI t test" /></td>
+    </tr>
+</table>
