@@ -1,4 +1,5 @@
 library(dplyr)
+library(ggplot2)
 #Deliverable 1
 mpg_db = read.csv('MechaCar_mpg.csv')
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,mpg_db))
@@ -32,4 +33,4 @@ PSI_aov <- aov(PSI ~ Manufacturing_Lot, data = total_PSI)
 summary(PSI_aov)
 TukeyHSD(PSI_aov)
 #Visualizations
-
+ggplot(total_PSI, aes(Manufacturing_Lot, PSI)) + geom_boxplot(aes(colour = Manufacturing_Lot), outlier.colour = "red", outlier.shape = 1)

@@ -33,6 +33,11 @@ However, further analyzing the separate lots within the total sample yield diffe
 <p>
     <img src="Resources/lot_summary.png" alt="Summary Statistics for Suspension Coils PSI" style="width: 50px" />
 </p>
+Below, boxplots are provided to further contrast the relative differences between lots 1 and 2 vs lot 3. 
+
+<p>
+    <img src="Resources/boxplots.png" alt="Boxplots" style="width: 50px" />
+</p>
 
 ## T-Tests on Suspension Coils
 Quality assuarance sets the benchmark for mean PSI to be 1500 for the suspension coils. Given that lot 3 coils do not meet the constraints for variance, follow up testing was conducted to confirm which lots met the 1500 PSI mean. The table below depicts the results of the t tests for each lot. 
